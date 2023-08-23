@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+</head>
+<style>
+    .container{
+        height: 500px;
+        background-color: grey;
+        margin: 40px;
+        display: flex;
+
+        /* flex direction property is used to align the elements from x axis to y */
+        /* flex-direction: column;   */
+
+        /* justify content propert is used to align elements properly inside their container */
+        justify-content: end;
+        /* justify the items align to which part of the flex bottom, upper or middle */
+        align-items: center; 
+
+        /* it allows the elememst to not alter their size and and wrap it accordingly */
+        /* flex-wrap: wrap; */
+    }
+    .box{
+        height: 100px;
+        width: 100px;
+        background-color: yellow;
+        border: 2px solid red;
+        margin: 10px;
+        /* display: inline-block; */
+    }
+    /* .one{
+        flex-grow: 3;
+    }
+    .two{
+        flex-shrink: 2;
+    } */
+</style>
+<body>
+    <div class="container">
+        <div class="box one"></div>
+        <div class="box two"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
+</body>
+</html>

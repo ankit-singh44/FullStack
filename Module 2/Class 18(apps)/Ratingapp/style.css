@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 10px; */
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 6rem;
+    margin-top: 10px;
+}
+
+.star-container{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.gold{
+    color: gold;
+}

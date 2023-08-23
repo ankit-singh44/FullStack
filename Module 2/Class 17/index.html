@@ -1,0 +1,90 @@
+<!-- /capturing phase, Target phase, bubbling phase -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        height: 90vh;
+        display: flex;
+
+    }
+    .grandparent{
+        height: 700px;
+        width: 700px;
+        background-color: brown;
+        margin: auto;
+        display: flex;  
+        border: 2px solid black;
+    }
+    .parent{
+        height: 500px;
+        width: 500px;
+        background-color: lightseagreen;
+        margin: auto;
+        border: 2px solid black;
+        display: flex;
+    }
+    .child{
+        height: 200px;
+        width: 200px;
+        margin: auto;
+        background-color: blueviolet;
+        border: 2px solid black;
+    }
+    </style>
+</head>
+<body>
+    <div class="grandparent">
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+    </div>
+    <script>
+        let grandparent=document.querySelector(".grandparent")
+        let parent=document.querySelector(".parent")
+        let child=document.querySelector(".child")
+        grandparent.addEventListener("click",function(e){
+            console.log("grandparent has been clicked");
+            console.log(e.eventPhase)
+            e.stopPropagation();
+        },true)
+        parent.addEventListener("click",function(e){
+            // console.log("Target: ",e.target)
+            // console.log("Current Target: ",e.currentTarget)
+            console.log("parent has been clicked");
+            console.log(e.eventPhase)
+        },true)
+        child.addEventListener("click",function(e){
+            console.log("child is been clicked")
+            console.log(e.eventPhase)
+            e.stopPropagation();
+            // console.log("Target: ",e.target)    // it gives where event is haapened/clicked
+            // console.log("Current Target: ",e.currentTarget) // it gives where event is applied
+        })
+
+
+
+        // example for complete cycle
+
+
+        // grandparent.addEventListener("click",function(e){
+        //     console.log("Another grandparent")
+        //     console.log(e.eventPhase)
+        // })
+        // parent.addEventListener("click",function(e){
+        //     console.log("Another parent")
+        //     console.log(e.eventPhase)
+        // })
+
+        // child.addEventListener("click",function(e){
+        //     console.log("another child event")
+        //     console.log(e.eventPhase)
+        // })
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.toolbox-cont{
+    height: 5rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.toolbox-priority-cont{
+height: 3rem;
+width: 18rem;
+background-color: aliceblue;
+margin-left: 5rem;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+.color{
+height: 1.8rem;
+width: 3rem;
+background-color: red;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.black{
+    background-color: black;
+}
+.action-btn{
+height: 3rem;
+width: 9rem;
+background-color: aliceblue;
+margin-left: 3rem ;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}  
+.add-btn{
+font-size: 1.75rem;
+}
+.remove-btn{
+font-size: 1.3rem;  
+}
+
+.modal-container{
+height: 50vh;
+width: 50vw;
+display: flex; 
+border: 2px solid black;
+margin-left: 2rem;
+margin-top: 2rem;
+}
+
+.textarea-cont{ 
+    height: 100%;
+    width: 75%;
+    outline: none;  
+    border: none;
+    font-size: 2rem;
+    padding: 2rem; 
+    resize: none;
+    box-sizing: border-box  ;
+}
+
+.priority-color-cont{
+    height: 100%;
+    width: 25%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-left: 2px solid black    ;
+}
+
+.priority-color{
+height: 3rem;
+width: 5rem;
+}
+
+.main-cont{
+margin-top: 3.5rem;
+/* display: flex; */
+/* flex-wrap: wrap; */
+}
+
+
+.ticket-cont{
+height: 10rem;
+width: 15rem;
+background-color: yellow;
+}
+
+.ticket-color{
+height: 1.5rem;
+width: 15rem;
+background-color: aquamarine;
+}
+
+.ticket-id{
+height: 2rem;
+background-color: grey;
+font-weight: 600    ;
+}
+
+.ticket-area{
+height: 7.5rem;
+padding: 5px;
+font-size: 1.25rem;
+}

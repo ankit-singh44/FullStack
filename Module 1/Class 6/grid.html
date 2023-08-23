@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            height: 100vh;
+            /* width: 100vh; */
+            display: grid;
+            /* background-color: red; */
+            grid-template-columns: 100px 100px 100px 100px 100px;
+            /* grid-template-columns: repeat(10,100px); */
+            /* grid-template-columns: 1fr 2fr 1fr 1fr; */
+            /* grid-template-columns: repeat(5, 1fr); */
+            grid-template-rows: 100px 100px 100px 100px;
+            /* grid-template-rows: repeat(5,1fr); */
+
+
+            /* justify-content: center;
+            align-content: center; */
+            /* short hand for above two */
+            /* first - align and second - justify */
+            place-content: center end;
+        }
+        .item-first{
+            background-color: yellow;
+            /* grid-row-start: 2;
+            grid-row-end: 4; */
+            /* shortcut way */
+            /* grid-row: 2/4; */
+            /* grid-column-start: 2;
+            grid-column-end: 5  ; */
+
+            /* shortcut */
+            /* grid-column: 2/5; */
+
+
+
+            /* shortcut for grid row and column */
+            grid-area: 2/2/4/5;
+            /* justify-self: center;
+            align-self: center; */
+            /* shorthander for above code */
+            /* place-self: end start; */
+        }
+            /* .item-second{
+                background-color: pink;
+            } */
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-first">I am first box</div>
+        <!-- <div class="item-second"></div> -->
+    </div>
+</body>
+</html>
