@@ -4,7 +4,7 @@ const fs=require("fs");
 
 // we are going to Read, Write, Update and delete a file using fs module
 
-// fs.writeFileSync("demo.txt","Hi I am demo file data update");
+fs.writeFileSync("demo.txt","Hi I am demo file data update");
 
 
 // let contentOfFileOne =fs.readFileSync("demo.txt");
@@ -31,13 +31,13 @@ const fs=require("fs");
 // check if any file or directory is exist or not 
 
 
-if(!fs.existsSync("myDirectory")){
-    fs.mkdirSync("myDirectory");
-}
+// if(!fs.existsSync("myDirectory")){
+//     fs.mkdirSync("myDirectory");
+// }
 
-if(!fs.existsSync("myDirectory2")){
-    fs.mkdirSync("myDirectory2");
-}
+// if(!fs.existsSync("myDirectory2")){
+//     fs.mkdirSync("myDirectory2");
+// }
 
 // let doesExist=fs.existsSync("myDirectory3");
 
